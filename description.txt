@@ -1,0 +1,62 @@
+﻿To see everything go to the forum page! (click the button below)
+Type /help to view commands in-game! (rolling out abc updates because I forgot to update /help)
+
+R3d: Fixed a tiny /itemprefix bug
+
+Pre-Alpha R3:
+            
+GENERAL:
+* Added tModLoader v0.7 support
+* Mod should now be readable using the tModReader application
+* Simplified /help, non-working arguments now just use ! and optional listed arguments are no longer between brackets {}.
+            
+BUG FIXES:
+* /giveitem works again and now uses edit distance to guess which item you meant (not perfect)
+* /npc should no longer spawn npcs an incorrect amount of times
+
+OTHER CHANGES:
+* A lot of code has been moved to ModPlayer
+* I have rewritten almost everything as try-catch which should translate for easier programming for me, and no crashes for you
+
+GOD MODE:
+* /godmode [true|false] or /gm [true|false] now completely shifted to ModPlayer. Remember that true/false can be omitted for fast use!
+* You now ignore any contact from mobs, deal quadripled damage and suffer from increased critical strikes.
+* Also a neat buff should appear while God mode is active. Eventually I want this to be a crown or divine circlet hovering your character.
+* God mode features:
+    * Infinite mana and health pool
+    * Infinite flight (24 hours)
+    * Quadripled damage
+    * 100% more critical strike chance
+    * No more damage taken by any source, even spikes
+    * No more gore and no more damage sound noises
+    * No more aggro drawn
+    * Ammo is not consumed
+    * Immune to all negative debuffs (buffs with a positive effect such as 'Feral Bite' should still work)
+
+TILE RANGE COMMAND:
+* /tilerange x [y] or /tr
+* Change your tilerange! Set an x and y value and set nothing to return to default.
+* eg: /tr 999 999 (999x16 = 15984 tiles.. nuff said)
+
+BUILDER COMMAND:
+* /builder or /bm
+* Now lets you enter build mode! This mode gives you:
+    * Infinite flight (24 hours)
+    * Infinite inventory stacks (non-depleting stacks)
+    * Infinite tilerange
+
+ITEM PREFIX COMMAND:
+* /itemprefix name|type|"list" or /itempre name|type|"list"
+* This command sets a prefix on your currently selected item! (eg: /itempre 81 this will give 'Legendary')
+* Index ranges from 1 to 83, but you can also enter the name of the prefix! (eg: /itempre legendary)
+* Use /itempre list to see all possible prefixes for your selected item
+
+ADDITIONS:
+* Added 'day' and 'night' for /time (/time day and /time night)
+* Added a teleport to the temple! Use /tp temple
+* Added edit distance calculation for /item
+* Added /tilerange x y (eg: /tilerange 150 150 use /tilerange or /tr to reset it to your normal values)
+* Added skeletron, brain of cthulhu/eater of worlds and eye of cthulhu to /down or /npcd
+
+Sorry for the late update, but it is finally here!
+-Gorateron on 15-01-2016
